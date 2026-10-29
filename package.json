@@ -1,0 +1,32 @@
+{
+  "name": "code-analysis-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx tsup src/server.ts --format esm --outDir dist",
+    "dev": "npx tsup src/server.ts --format esm --outDir dist && node ./dist/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@octokit/app": "^16.0.1",
+    "@octokit/rest": "^22.0.0",
+    "@octokit/webhooks": "^14.1.1",
+    "@prisma/client": "^6.13.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "prisma": "^6.13.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.1.0",
+    "nodemon": "^3.1.10",
+    "tsup": "^8.5.0"
+  }
+}
